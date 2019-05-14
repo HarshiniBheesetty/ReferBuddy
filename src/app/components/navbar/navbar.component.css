@@ -1,0 +1,17 @@
+
+
+a.navbar-brand, a.navbar-brand:hover{
+    color: #101820FF;
+    
+}
+.navbar-nav li a {
+    color: #101820FF;
+}
+ .navbar-text a{
+    color: #101820FF;
+}
+
+ .fa-receipt{
+    font-size: 2rem;
+   
+}

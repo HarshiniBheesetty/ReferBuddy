@@ -1,0 +1,32 @@
+<div *ngIf="companyReferral!= null">
+  
+ <div class="container">
+    <div class="alert alert-secondary" role="alert">
+     
+        <div class="media">
+            <img src={{companyReferral.Model.LogoUrl}} height="74px" width="100px" class="mr-3"  alt="...">
+            <div class="media-body">
+              <div  class="text-right">
+                  <h3><span class="badge badge-warning" >{{companyReferral.Model.Name}}</span></h3>
+              <a  class="text-dark" class="badge badge-secondary" routerLink='/{{companyReferral.Model.HomePageUrl}}' >Comany Url</a>
+             </div>
+            </div>
+          </div>   
+      </div>
+    <br> <br>
+
+   <div class="container">
+      <div class="row">
+        <div class="col-sm">
+           <h3>Referral Codes</h3> 
+           <div *ngFor ="let code of companyReferral.Model.Code">{{code}} 
+              <button class="btn btn-info ml-5" >Copy</button>
+              <br><br>
+            </div>
+        </div>
+      </div>
+    </div>   
+</div> 
+</div>
+
+

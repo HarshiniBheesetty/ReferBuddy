@@ -1,0 +1,31 @@
+h3{
+    text-align: center;
+    color: gray;
+}
+.check{
+    position: fixed;
+    min-width: 100%;
+    /*background-color: #DDDDDD;*/
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 1)),url("src/assets/doddle1.jpg");
+    /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+    
+}
+.form-container{
+    margin-top:20%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+
+
+
+

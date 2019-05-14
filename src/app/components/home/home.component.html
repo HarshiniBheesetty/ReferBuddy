@@ -1,0 +1,62 @@
+<!-- <ngx-loading 
+  [show]="loading" 
+  [config]="{ backdropBorderRadius: '3px' }" 
+  [template]="customLoadingTemplate">
+</ngx-loading> -->
+<div class="main">
+<div class="container ">
+
+  
+  <input type="text" 
+   class="form-control form-control-lg border border-dark" 
+   placeholder="Enter company" 
+   [(ngModel)]="searchKey" 
+   (input)="onSearch()">
+
+  <div class="list-group" *ngIf="filteredCompanies.length > 0">
+    <button 
+      type="button" 
+      class="list-group-item list-group-item-action " 
+      *ngFor="let filteredCompany of filteredCompanies"
+      [routerLink]="['/companyreferralcode' , filteredCompany.Id]">
+      <!--changes url, it adds ID in the url-->
+      {{filteredCompany.Name}}
+    </button> 
+  </div> 
+</div>
+<div class="container-fluid outer">
+  <div class="row">
+    <div class="col-md-6 col-one">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container-fluid">
+                <img src="assets/ninja1.jpg" height="110px" width="100px"><h1 class="display-4">What is ReferBuddy?</h1>
+                
+              <p class="lead">ReferBuddy is referral codes hub and it lets you to share and access referrals with the world!</p>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-6 col-two">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container-fluid">
+                <img src="assets/ninja2.png" height="110px" width="100px">
+              <h1 class="display-4">How ReferBuddy works? </h1>
+            
+              <p class="lead">To provide referral code click on Add code and to access codes click on Access code on the top of the page.</p>
+            </div>
+          </div>
+    </div>
+    <!-- <div class="col-md-4">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">ReferBuddy Journey</h1>
+              <img src="assets/new.png" class="display-4" height="110px" width="80px">
+              
+            </div>
+          </div>
+    </div> -->
+  </div>
+</div>
+</div>
+<!--</div> <div *ngIf="companiesResponse">
+  <app-comapany-unit *ngFor="let company of companiesResponse.Model" [company]="company"></app-comapany-unit> 
+</div> -->
