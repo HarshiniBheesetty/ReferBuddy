@@ -1,17 +1,18 @@
 
 
 a.navbar-brand, a.navbar-brand:hover{
-    color: #101820FF;
+    color: white
     
 }
 .navbar-nav li a {
-    color: #101820FF;
+    color: white;
 }
  .navbar-text a{
-    color: #101820FF;
+    color: white;
 }
 
  .fa-receipt{
     font-size: 2rem;
+    color: #f4bf42;
    
 }
